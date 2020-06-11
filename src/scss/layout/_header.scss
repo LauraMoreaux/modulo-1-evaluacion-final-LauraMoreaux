@@ -1,0 +1,37 @@
+.header {
+  background-image: url(../images/cover.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  background-position: center;
+  background-position: top;
+
+  & .wrapper {
+    height: 100vh;
+    padding: 30px;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    color: $color-light;
+
+    & h1 {
+      text-transform: uppercase;
+      & span {
+        display: block;
+      }
+    }
+
+    & h2 {
+      text-transform: capitalize;
+    }
+
+    & .buttom {
+      background-color: $color-light;
+      width: 30px;
+      align-self: center;
+      margin-top: 20px;
+    }
+  }
+}
