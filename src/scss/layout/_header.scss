@@ -1,8 +1,7 @@
 .header {
   background-image: url(../images/cover.jpg);
-  // height: 100vh;
   background-repeat: no-repeat;
-  background-position: center;
+  // background-position: center;
   background-position: top;
 
   & .wrapper {
@@ -35,7 +34,7 @@
       background-color: $color-light;
       width: 40px;
       padding: 10px;
-      border-radius: 100px;
+      border-radius: 100%;
       align-self: center;
       margin-top: 45px;
     }

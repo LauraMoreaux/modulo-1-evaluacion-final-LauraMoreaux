@@ -3,19 +3,16 @@
   padding: 30px;
   height: 624px;
   text-align: center;
-  position: relative;
+  // position: relative;
 
   & .options-title {
     text-transform: capitalize;
-    margin-top: 10px;
+    margin: 15px 0px;
   }
 
   & .articles {
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    height: 75%;
+    display: grid;
     padding: 20px 68px;
     line-height: 1.67;
   }
@@ -38,6 +35,7 @@
     padding: 15px;
     border-radius: 100%;
     position: absolute;
-    transform: translate(-120px, 135px);
+    transform: translate(-122px, 90px);
+    box-shadow: 0px 2px 18px black;
   }
 }

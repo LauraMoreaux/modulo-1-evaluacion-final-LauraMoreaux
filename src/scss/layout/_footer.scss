@@ -2,8 +2,9 @@
   height: 485px;
   padding-top: 30px;
   color: $color-light;
-  line-height: 0.9;
+  line-height: 1.1;
   font-size: 12px;
+  // EN REALIDAD SON 16PX
   background-color: $color-back-footer;
 
   & .wrapper {
@@ -39,7 +40,7 @@
       }
 
       &:first-child {
-        margin-top: 10px;
+        margin-top: 20px;
       }
     }
   }
