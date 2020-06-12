@@ -1,6 +1,6 @@
 .options {
   background-color: $color-back-options;
-  padding: 15px;
+  padding: 30px;
   height: 624px;
   text-align: center;
   position: relative;
@@ -26,7 +26,7 @@
     width: 190px;
     height: 45px;
     border-radius: 50px;
-    padding: 14px;
+    padding: 13px;
 
     & .buttom-title {
       color: $color-light;
@@ -34,12 +34,10 @@
   }
 
   & .narrow {
-    border: 1px solid red;
     background-color: $color-light;
     padding: 15px;
     border-radius: 100%;
-    display: inline-block;
-    //   position: relative;
-    //   bottom: -100px;
+    position: absolute;
+    transform: translate(-120px, 135px);
   }
 }

@@ -1,7 +1,10 @@
 .footer {
-  height: 465px;
+  height: 485px;
   padding-top: 20px;
   color: $color-light;
+  line-height: 0.9;
+  font-size: 12px;
+  // EN REALIDAD SON 16PX
   background-color: $color-back-footer;
   display: flex;
   flex-direction: column;
@@ -11,11 +14,11 @@
   & .extra-content,
   .links {
     text-transform: uppercase;
+    font-weight: normal;
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-top: 20px;
-    margin-bottom: 15px;
 
     & a {
       padding: 4px;
@@ -26,5 +29,14 @@
     display: block;
     text-align: center;
     padding: 5px;
+
+    & img {
+      height: 10px;
+      width: 10px;
+    }
+
+    &:first-child {
+      margin-top: 5px;
+    }
   }
 }
