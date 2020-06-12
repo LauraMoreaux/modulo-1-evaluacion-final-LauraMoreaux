@@ -1,0 +1,40 @@
+.main {
+  padding: 15px;
+
+  & .introduction {
+    color: $color-back-text;
+    text-transform: capitalize;
+    font-size: $xsmall;
+  }
+
+  & .main-title {
+    text-transform: capitalize;
+    margin: 0px 0px 10px 0px;
+
+    & span {
+      display: block;
+    }
+  }
+
+  & .text {
+    color: $color-light-text;
+    font-size: $medium;
+    margin: 10px 0px;
+  }
+
+  & .main-buttom {
+    display: inline-block;
+    padding: 12px;
+    margin-top: 20px;
+    border: 2px solid $color-border-buttom;
+    width: 76px;
+    height: 45px;
+    border-radius: 50px;
+
+    & .text-buttom {
+      text-transform: capitalize;
+      color: $color-border-buttom;
+      text-align: center;
+    }
+  }
+}
