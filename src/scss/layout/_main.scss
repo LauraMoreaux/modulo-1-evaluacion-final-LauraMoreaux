@@ -25,7 +25,8 @@
 
   & .main-title {
     text-transform: capitalize;
-    margin: 0px 0px 10px 0px;
+    line-height: 1.25;
+    margin: 10px 0px;
 
     @include tablet {
       font-size: 26px;
