@@ -1,3 +1,30 @@
-footer {
+.footer {
   height: 465px;
+  padding-top: 20px;
+  color: $color-light;
+  background-color: $color-back-footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  & .extra-content,
+  .links {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 15px;
+
+    & a {
+      padding: 4px;
+    }
+  }
+
+  & span {
+    display: block;
+    text-align: center;
+    padding: 5px;
+  }
 }
