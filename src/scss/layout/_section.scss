@@ -5,21 +5,63 @@
   text-align: center;
   // position: relative;
 
+  @include tablet {
+    height: 397px;
+  }
+
+  @include desktop {
+    height: 427px;
+  }
+
   & .options-title {
     text-transform: capitalize;
+    font-size: $xxlarge;
     margin: 15px 0px;
+
+    @include tablet {
+      font-size: 26px;
+    }
+
+    @include desktop {
+      font-size: 32px;
+    }
   }
 
   & .articles {
+    padding: 45px 68px;
     height: 75%;
-    display: grid;
-    padding: 20px 68px;
     line-height: 1.67;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+    @include tablet {
+      padding: 45px 38px;
+      height: 58%;
+      line-height: 1.5;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+
+      .item1,
+      .item2,
+      .item3 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+      & .title {
+        font-size: $xxlarge;
+      }
+      & .text {
+        font-size: $large;
+        grid-row-start: 2;
+      }
+    }
   }
 
   & .reasons-buttom {
     background-color: $color-border-buttom;
     text-align: center;
+    font-size: $xxlarge;
     display: inline-block;
     border: $color-border-buttom;
     color: $color-light;
@@ -34,6 +76,14 @@
       border: 1px solid $color-light-text;
       transition: color ease 2s, transform ease 2s, border ease 2s;
     }
+
+    @include tablet {
+      width: 210px;
+      padding: 10px;
+    }
+    @include desktop {
+      width: 255px;
+    }
   }
 
   & .narrow {
@@ -43,5 +93,12 @@
     position: absolute;
     transform: translate(-122px, 90px);
     box-shadow: 0px 2px 18px black;
+
+    @include tablet {
+      transform: translate(-130px, 90px);
+    }
+    @include desktop {
+      transform: translate(-150px, 90px);
+    }
   }
 }
