@@ -1,18 +1,47 @@
 .main {
   padding: 15px;
 
+  @include tablet {
+    padding: 30px 39px;
+  }
+
+  @include desktop {
+    padding: 60px 275px;
+  }
+
   & .introduction {
     color: $color-back-text;
     text-transform: capitalize;
     font-size: $xsmall;
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
+
+    @include desktop {
+      font-size: $small;
+    }
   }
 
   & .main-title {
     text-transform: capitalize;
     margin: 0px 0px 10px 0px;
 
+    @include tablet {
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+
+    @include desktop {
+      font-size: 32px;
+    }
+
     & span {
       display: block;
+
+      @include tablet {
+        display: inline;
+      }
     }
   }
 
@@ -20,12 +49,18 @@
     color: $color-light-text;
     font-size: $medium;
     margin: 10px 0px;
+    line-height: 1.5;
+
+    @include tablet {
+      font-size: $large;
+    }
   }
 
   & .main-buttom {
     display: inline-block;
     text-transform: capitalize;
     color: $color-border-buttom;
+    font-size: $large;
     text-align: center;
     padding: 12px;
     margin-top: 20px;
@@ -33,6 +68,10 @@
     width: 76px;
     height: 45px;
     border-radius: 50px;
+
+    @include tablet {
+      width: 91px;
+    }
 
     &:hover {
       background-color: $color-back-text;
