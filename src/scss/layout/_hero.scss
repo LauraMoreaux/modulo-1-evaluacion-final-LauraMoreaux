@@ -1,12 +1,11 @@
 .hero {
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
-  // background-position: center;
   background-position: top;
 
   & .wrapper {
     height: 100vh;
-    padding: 45px;
+    padding: 0 15px 53px 15px;
     max-height: 700px;
     display: flex;
     flex-direction: column;
@@ -14,12 +13,31 @@
     justify-content: flex-end;
     color: $color-light;
 
+    @include tablet {
+      padding: 39px;
+      max-height: 768px;
+    }
+
+    @include desktop {
+      padding: 20px 275px;
+    }
+
     & .text1 {
       text-transform: uppercase;
       font-size: 42px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+
       & span {
-        display: block;
+        display: inline-block;
+        line-height: 55px;
+      }
+
+      @include tablet {
+        font-size: 80px;
+      }
+
+      @include desktop {
+        font-size: 100px;
       }
     }
 
@@ -28,6 +46,10 @@
       text-transform: capitalize;
       font-weight: normal;
       font-size: $small;
+
+      @include tablet {
+        font-size: $large;
+      }
     }
 
     & .buttom {
@@ -36,7 +58,7 @@
       padding: 10px;
       border-radius: 100%;
       align-self: center;
-      margin-top: 45px;
+      margin-top: 35px;
     }
   }
 }
