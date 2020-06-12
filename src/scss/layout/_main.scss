@@ -24,6 +24,9 @@
 
   & .main-buttom {
     display: inline-block;
+    text-transform: capitalize;
+    color: $color-border-buttom;
+    text-align: center;
     padding: 12px;
     margin-top: 20px;
     border: 2px solid $color-border-buttom;
@@ -31,10 +34,13 @@
     height: 45px;
     border-radius: 50px;
 
-    & .text-buttom {
-      text-transform: capitalize;
-      color: $color-border-buttom;
-      text-align: center;
+    &:hover {
+      background-color: $color-back-text;
+      border: 6px;
+      width: 150px;
+      text-transform: uppercase;
+      transition: color linear 1s, border linear 0s, text-transform linear 0s,
+        width ease 1s;
     }
   }
 }
