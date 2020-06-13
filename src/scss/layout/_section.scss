@@ -103,25 +103,21 @@
 
     @keyframes intro {
       from {
-        transform: scale(10);
         transform: translate(-361px, 90px);
         opacity: 0;
       }
 
       35% {
-        transform: scale(10);
         transform: translate(61px, 90px);
         opacity: 0.5;
       }
 
       65% {
-        transform: scale(10);
         transform: translate(-301px, 90px);
         opacity: 0.5;
       }
 
       to {
-        transform: scale(1);
         transform: translate(-118px, 90px);
         opacity: 1;
       }
@@ -132,25 +128,21 @@
 
       @keyframes intro {
         from {
-          transform: scale(10);
           transform: translate(-488px, 90px);
           opacity: 0;
         }
 
         35% {
-          transform: scale(10);
           transform: translate(230px, 90px);
           opacity: 0.5;
         }
 
         65% {
-          transform: scale(10);
           transform: translate(-488px, 90px);
           opacity: 0.5;
         }
 
         to {
-          transform: scale(1);
           transform: translate(-130px, 90px);
           opacity: 1;
         }
@@ -162,25 +154,21 @@
 
       @keyframes intro {
         from {
-          transform: scale(10);
           transform: translate(-728px, 90px);
           opacity: 0;
         }
 
         35% {
-          transform: scale(10);
           transform: translate(424px, 90px);
           opacity: 0.5;
         }
 
         65% {
-          transform: scale(10);
           transform: translate(-728px, 90px);
           opacity: 0.5;
         }
 
         to {
-          transform: scale(1);
           transform: translate(-150px, 90px);
           opacity: 1;
         }
