@@ -1,23 +1,25 @@
 .footer {
-  height: 465px;
-  padding-top: 20px;
+  // height: 480px;
+  padding: 45px 0px;
   color: $color-light;
   font-size: 16px;
   background-color: $color-back-footer;
 
-  @include tablet {
-    height: 240px;
-    padding-right: 39px;
-    padding-left: 39px;
-  }
+  // @include tablet {
+  //   height: 240px;
+  //   padding-right: 39px;
+  //   padding-left: 39px;
+  // }
 
-  @include desktop {
-    padding-right: 370px;
-    padding-left: 370px;
-  }
+  // @include desktop {
+  //   padding-right: 370px;
+  //   padding-left: 370px;
+  // }
 
   & .wrapper {
     width: 100%;
+    max-width: 1200px;
+    margin: auto;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -31,7 +33,10 @@
     }
 
     & .links {
+      padding-top: 30px;
+
       @include tablet {
+        padding-top: 0px;
         order: -2;
       }
     }
@@ -44,7 +49,6 @@
       display: flex;
       flex-direction: column;
       text-align: center;
-      padding-top: 20px;
 
       @include tablet {
         text-align: left;

@@ -2,42 +2,47 @@
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: top;
+  background-position: center;
+  background-size: cover;
 
   & .wrapper {
     height: 100vh;
     padding: 0 15px 53px 15px;
-    max-height: 700px;
+    max-height: 1200px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: flex-end;
     color: $color-light;
 
-    @include tablet {
-      padding: 39px;
-      max-height: 768px;
-    }
+    // @include tablet {
+    //   padding: 49px;
+    // }
 
-    @include desktop {
-      padding: 20px 275px;
-    }
+    // @include desktop {
+    //   // padding: 20px 375px;
+    // }
 
     & .text1 {
       text-transform: uppercase;
       font-size: 42px;
-      margin-bottom: 20px;
+      margin-bottom: 35px;
 
       & span {
-        display: inline-block;
+        display: block;
         line-height: 55px;
-      }
+        font-weight: bold;
 
-      @include tablet {
-        font-size: 80px;
-      }
+        @include tablet {
+          font-size: 80px;
+          line-height: 106px;
+        }
 
-      @include desktop {
-        font-size: 100px;
+        @include desktop {
+          font-size: 100px;
+          line-height: 132px;
+        }
       }
     }
 

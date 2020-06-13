@@ -1,5 +1,7 @@
 .main {
   padding: 15px;
+  max-width: 1200px;
+  margin: auto;
 
   @include tablet {
     padding: 30px 39px;
@@ -63,7 +65,7 @@
     color: $color-border-buttom;
     font-size: $large;
     text-align: center;
-    padding: 12px;
+    padding: 10px;
     margin-top: 20px;
     border: 2px solid $color-border-buttom;
     width: 76px;
@@ -79,6 +81,12 @@
       border: 6px;
       width: 150px;
       text-transform: uppercase;
+      -webkit-transition: color linear 1s, border linear 0s,
+        text-transform linear 0s, width ease 1s;
+      -moz-transition: color linear 1s, border linear 0s,
+        text-transform linear 0s, width ease 1s;
+      -o-transition: color linear 1s, border linear 0s, text-transform linear 0s,
+        width ease 1s;
       transition: color linear 1s, border linear 0s, text-transform linear 0s,
         width ease 1s;
     }
