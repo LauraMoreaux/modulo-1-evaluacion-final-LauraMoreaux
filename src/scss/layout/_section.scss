@@ -15,15 +15,15 @@
 
   & .options-title {
     text-transform: capitalize;
-    font-size: $xxlarge;
+    font-size: rem(24);
     margin: 15px 0px;
 
     @include tablet {
-      font-size: 26px;
+      font-size: rem(26);
     }
 
     @include desktop {
-      font-size: 32px;
+      font-size: rem(32);
     }
   }
 
@@ -50,10 +50,10 @@
         grid-template-rows: repeat(2, 1fr);
       }
       & .title {
-        font-size: $xxlarge;
+        font-size: rem(24);
       }
       & .text {
-        font-size: $large;
+        font-size: rem(20);
         grid-row-start: 2;
       }
     }
@@ -61,7 +61,7 @@
 
   & .reasons-buttom {
     background-color: $color-border-buttom;
-    font-size: $large;
+    font-size: rem(20);
     display: inline-block;
     border: $color-border-buttom;
     color: $color-light;

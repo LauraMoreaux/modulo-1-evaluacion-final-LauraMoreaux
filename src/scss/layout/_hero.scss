@@ -26,7 +26,7 @@
 
     & .text1 {
       text-transform: uppercase;
-      font-size: 42px;
+      font-size: rem(42);
       margin-bottom: 35px;
 
       & span {
@@ -35,12 +35,12 @@
         font-weight: bold;
 
         @include tablet {
-          font-size: 80px;
+          font-size: rem(80);
           line-height: 106px;
         }
 
         @include desktop {
-          font-size: 100px;
+          font-size: rem(100);
           line-height: 132px;
         }
       }
@@ -50,10 +50,10 @@
       display: inline-block;
       text-transform: capitalize;
       font-weight: normal;
-      font-size: $small;
+      font-size: rem(18);
 
       @include tablet {
-        font-size: $large;
+        font-size: rem(20);
       }
     }
 

@@ -1,10 +1,10 @@
 .main {
-  padding: 15px;
+  padding: 30px 15px 45px;
   max-width: 1200px;
   margin: auto;
 
   @include tablet {
-    padding: 30px 39px;
+    padding: 30px 39px 60px;
   }
 
   @include desktop {
@@ -14,14 +14,14 @@
   & .introduction {
     color: $color-back-text;
     text-transform: capitalize;
-    font-size: $xsmall;
+    font-size: rem(14);
 
     @include tablet {
       margin-bottom: 20px;
     }
 
     @include desktop {
-      font-size: $small;
+      font-size: rem(16);
     }
   }
 
@@ -31,12 +31,12 @@
     margin: 10px 0px;
 
     @include tablet {
-      font-size: 26px;
+      font-size: rem(26);
       margin-bottom: 30px;
     }
 
     @include desktop {
-      font-size: 32px;
+      font-size: rem(32);
     }
 
     & span {
@@ -50,12 +50,12 @@
 
   & .text {
     color: $color-light-text;
-    font-size: $medium;
+    font-size: rem(18);
     margin: 10px 0px;
     line-height: 1.5;
 
     @include tablet {
-      font-size: $large;
+      font-size: rem(18);
     }
   }
 
@@ -63,7 +63,7 @@
     display: inline-block;
     text-transform: capitalize;
     color: $color-border-buttom;
-    font-size: $large;
+    font-size: rem(20);
     text-align: center;
     padding: 10px;
     margin-top: 20px;
