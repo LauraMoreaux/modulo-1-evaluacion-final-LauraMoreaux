@@ -15,6 +15,8 @@
     text-align: center;
     justify-content: flex-end;
     color: $color-light;
+    animation: flipInX;
+    animation-duration: 2s;
 
     & .text1 {
       text-transform: uppercase;
