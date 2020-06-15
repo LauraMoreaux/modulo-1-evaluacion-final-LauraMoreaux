@@ -16,20 +16,12 @@
     justify-content: flex-end;
     color: $color-light;
 
-    // @include tablet {
-    //   padding: 49px;
-    // }
-
-    // @include desktop {
-    //   // padding: 20px 375px;
-    // }
-
     & .text1 {
       text-transform: uppercase;
       font-size: rem(42);
       margin-bottom: 35px;
 
-      & span {
+      & .word {
         display: block;
         line-height: 55px;
         font-weight: bold;
@@ -57,7 +49,7 @@
       }
     }
 
-    & .buttom {
+    & a {
       background-color: $color-light;
       width: 40px;
       padding: 10px;

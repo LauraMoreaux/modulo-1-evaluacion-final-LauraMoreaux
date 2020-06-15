@@ -1,20 +1,8 @@
 .footer {
-  // height: 480px;
   padding: 45px 0px;
   color: $color-light;
   font-size: rem(16);
   background-color: $color-back-footer;
-
-  // @include tablet {
-  //   height: 240px;
-  //   padding-right: 39px;
-  //   padding-left: 39px;
-  // }
-
-  // @include desktop {
-  //   padding-right: 370px;
-  //   padding-left: 370px;
-  // }
 
   & .wrapper {
     width: 100%;
@@ -59,7 +47,7 @@
       }
     }
 
-    & span {
+    & .year {
       display: block;
       text-align: center;
       padding: 5px;
